@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="248.0" prefWidth="300.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="com.example.csc311_gui_basics.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label rotate="8.7" text="Tasnim Ferdous" textFill="#21a1e1">
+      <font>
+         <Font name="Futura Medium" size="24.0" />
+      </font>
+   </Label>
+   <Label>
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+
+    <Label fx:id="welcomeText" />
+   <Cylinder height="100" radius="20" rotate="-70.3" />
+   <Sphere drawMode="LINE" radius="50" />
+    <Button fx:id="btn1" onAction="#onHelloButtonClick" prefHeight="43.0" prefWidth="110.0" style="-fx-background-color: orange;" text="Button1" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font></Button>
+   <Button fx:id="btn2" mnemonicParsing="false" onAction="#onButton2Click" prefHeight="41.0" prefWidth="193.0" style="-fx-background-color: green;" text="Button2" textFill="WHITE">
+      <font>
+         <Font name="October Devanagari Regular" size="19.0" />
+      </font>
+   </Button>
+</VBox>
